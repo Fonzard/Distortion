@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Distorsion</title>
-        <link rel="stylesheet" href="/home/homes/francisrouxel/sites/php/res04_php_distorsion/assets/styles/css/style.css" />
+        <link rel="stylesheet" href="./assets/styles/css/style.css" />
 </head>
 <body>
     <header>
@@ -22,28 +22,28 @@
     <?php 
     switch($this->template){
         case "edit_user":
-             require "/home/homes/francisrouxel/sites/php/res04_php_distorsion/views/user/edit_user.phtml";
+             require "./views/user/edit_user.phtml";
             break;
         case "login":
-             require "/home/homes/francisrouxel/sites/php/res04_php_distorsion/views/login/login.phtml";
+             require "./views/login/login.phtml";
             break;
         case "register":
-             require "/home/homes/francisrouxel/sites/php/res04_php_distorsion/views/register/register.phtml";
+             require "./views/register/register.phtml";
             break;
         case"create_room":
-            require "/home/homes/francisrouxel/sites/php/res04_php_distorsion/views/room/create_room.phtml";
+            require "./views/room/create_room.phtml";
             break;
         case"edit_room":
-            require "/home/homes/francisrouxel/sites/php/res04_php_distorsion/views/room/edit_room.phtml";
+            require "./views/room/edit_room.phtml";
             break;
         case"index":
-            require "/home/homes/francisrouxel/sites/php/res04_php_distorsion/views/category/index_category.phtml";
+            require "./views/category/index_category.phtml";
             break;
         case "display_chat":
-            require "/home/homes/francisrouxel/sites/php/res04_php_distorsion/views/chat/display_chat.phtml";
+            require "./views/chat/display_chat.phtml";
             break;
         case "create_chat":
-            require "/home/homes/francisrouxel/sites/php/res04_php_distorsion/views/chat/create_chat.phtml";
+            require "./views/chat/create_chat.phtml";
             break;
     }
     ?>
