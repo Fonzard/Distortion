@@ -1,0 +1,43 @@
+<style type="text/css">
+    .info-user{
+        display: flex;
+        gap: .5em;
+        align-items : center;
+    }
+    
+    .container-message{
+        display: flex;
+        gap:.5em;
+        align-items : center;
+        
+    }
+
+    .user-message{
+        width: auto;
+        height: auto;
+        border-radius: 15px;
+        padding: .5em;
+        margin-left: 2em;
+        background-color :#1378BC;
+    }
+    
+    .user-message > p{
+        color: white;
+    }
+    
+    .btn-trash{
+        width: 2.5em;
+        height: 2.5em;
+    }
+    
+    
+</style>
+
+<section>
+    <form action="index.php?route=create_chat" method="post" class="container-message">
+        <input type="hidden" name="room_id" value="<?= $this->data['room']->getId ?>">
+        <label for="content"><?= $this->data['room']->getName ?></label>
+        <textarea name="content" placeholder="Votre message" class="user-message"></textarea>
+        <input type="submit" value="Envoyer" class="btn_trash">
+    </form>
+</section>

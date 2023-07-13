@@ -1,0 +1,26 @@
+<h2>Connexion</h2>
+
+<form action="index.php?route=login" method="POST" class="formulaire">
+    <fieldset>
+        <legend>Connexion</legend>
+        
+        <div class="field">
+            <label for="username">Pseudo</label>
+            <div class="pseudo"><input type="text" id="username" name="username" required></div>
+        </div>
+        
+        <div class="field">
+            <label for="password">Password</label>
+            <div class="password"><input type="password" id="password" name="password" required></div>
+        </div>
+        
+        <div class="button1">
+            <input type="submit" value="login" name="login" >
+        </div>
+        <input type="hidden" name="formLogin"/>
+        <div class="button2">
+             <a href="index.php?route=register">Inscription</a>
+        </div>
+        
+    </fieldset>
+</form>

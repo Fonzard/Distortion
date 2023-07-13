@@ -1,0 +1,58 @@
+body {
+  background-color: #52bb38;
+  display: flex;
+  justify-content: center;
+}
+
+fieldset {
+  border-radius: 5px;
+  background-color: #FFFFFF;
+}
+
+.field {
+  display: flex;
+  justify-content: center;
+  margin: 0.5em;
+}
+
+input {
+  width: 50vw;
+  height: 2em;
+}
+
+label {
+  width: 7em;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.connexion {
+  width: 10em;
+  background-color: #414b2a;
+  color: #FFFFFF;
+  border-radius: 5px;
+  margin: 2em;
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+
+.button2 {
+  display: flex;
+  justify-content: center;
+  width: 10em;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #414b2a;
+  margin: 2em;
+  padding: 0.5em;
+}
+
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */

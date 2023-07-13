@@ -1,0 +1,19 @@
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+    </tr>
+<?php foreach($this->data['categories'] as $category) : ?>
+<?php foreach($this->data['rooms'] as $room) : ?>
+    <tr>
+        <?php if($category->getId === $room->getCategory_id) { ?>
+        <td style="text-transform = uppercase"><?= $categories->getName?></td>
+        <a href="index.php?route=edit_room&id=<?php echo $room->getId();?>"> 
+        <td><?= $room->getName(); ?></td>
+        <td><?= $room->getDescription(); ?></td>
+        </a>
+    </tr>
+    <?php } ?>
+<?php endforeach; ?>
+<?php endforeach; ?>
+</table>

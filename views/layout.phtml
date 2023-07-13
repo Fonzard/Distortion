@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Distorsion</title>
+        <link rel="stylesheet" href="/home/homes/francisrouxel/sites/php/res04_php_distorsion/assets/styles/css/style.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.php?route=login">Connexion</a></li>
+                <li><a href="index.php?route=register">Création de compte</a></li>
+                <li><a href="index.php?route=index_room">Room</a></li>
+                <li><a href="index.php?route=index_category">Categories</a></li>
+                <li><a href="index.php?route=display_chat">Post</a></li>
+                <li><a href="index.php?route=create_chat">Send Post</a></li>
+            </ul>
+        </nav>
+    </header>
+       
+    <?php 
+    switch($this->template){
+        case "edit_user":
+             require "/home/homes/francisrouxel/sites/php/res04_php_distorsion/views/user/edit_user.phtml";
+            break;
+        case "login":
+             require "/home/homes/francisrouxel/sites/php/res04_php_distorsion/views/login/login.phtml";
+            break;
+        case "register":
+             require "/home/homes/francisrouxel/sites/php/res04_php_distorsion/views/register/register.phtml";
+            break;
+        case"create_room":
+            require "/home/homes/francisrouxel/sites/php/res04_php_distorsion/views/room/create_room.phtml";
+            break;
+        case"edit_room":
+            require "/home/homes/francisrouxel/sites/php/res04_php_distorsion/views/room/edit_room.phtml";
+            break;
+        case"index":
+            require "/home/homes/francisrouxel/sites/php/res04_php_distorsion/views/category/index_category.phtml";
+            break;
+        case "display_chat":
+            require "/home/homes/francisrouxel/sites/php/res04_php_distorsion/views/chat/display_chat.phtml";
+            break;
+        case "create_chat":
+            require "/home/homes/francisrouxel/sites/php/res04_php_distorsion/views/chat/create_chat.phtml";
+            break;
+    }
+    ?>
+
+</body>
+</html>

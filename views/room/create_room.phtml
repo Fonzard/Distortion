@@ -1,0 +1,28 @@
+<form action="index.php?route=create_room" method="POST">
+    <fieldset>
+        <legend>Create Room</legend>
+        
+        <div class="field">
+            <label for="name">Room name : </label>
+            <div class="create-room"><input type="text" id="create-room" name="name"></div>
+        </div>
+        
+         <div class="field">
+            <label for="description">Description : </label>
+            <div class="desc-room"><input type="text" id="desc-room" name="description"></div>
+        </div>
+        
+        <div class="field">
+            <label for="category_select">Category : </label>
+            <select name="category_select" id="category_select">
+                <?php foreach($this->data['categories'] as $category) :?>
+                <option value="<?= $category->getId(); ?>"><?=$category->getName();?></option>
+                <?php endforeach ?>
+            </select>   
+        </div>
+        
+        <div>
+            <button type="submit" value"">Submit</button>
+        </div>
+    </fieldset>
+</form>
